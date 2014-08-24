@@ -135,6 +135,7 @@ var JSHINT = (function () {
       couch       : true, // if CouchDB globals should be predefined
       jasmine     : true, // Jasmine functions should be predefined
       jquery      : true, // if jQuery globals should be predefined
+      mongodb     : true, // if the MongoDB globals should be
       node        : true, // if the Node.js environment globals should be
       // predefined
       qunit       : true, // if the QUnit environment globals should be predefined
@@ -418,6 +419,10 @@ var JSHINT = (function () {
 
     if (state.option.jasmine) {
       combine(predefined, vars.jasmine);
+    }
+
+    if (state.option.jasmine) {
+      combine(predefined, vars.mongodb);
     }
 
     if (state.option.jquery) {

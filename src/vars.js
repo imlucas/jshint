@@ -677,3 +677,23 @@ exports.jasmine = {
   waitsFor    : false,
   waits       : false
 };
+
+exports.mongodb = {
+  print      : false,
+  load       : false,
+  gc         : false,
+  MinKey     : false,
+  MaxKey     : false,
+  Mongo      : false,
+  NumberInt  : false,
+  NumberLong : false,
+  ObjectId   : false,
+  DBPointer  : false,
+  UUID       : false,
+  BinData    : false,
+  HexData    : false,
+  MD5        : false,
+  Map        : false,
+  Timestamp  : false,
+  JSON       : false
+};
